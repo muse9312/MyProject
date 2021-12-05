@@ -9,6 +9,8 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "employees")
+
+// 직원 정보
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,22 +18,22 @@ public class Employee {
 
     // Column = 열 이름을 필드에 매핑하고 여기에 열 이름을 지정 할 수 있음.
     @Column(name = "first_name")
-    private String firstname;
+    private String firstName;
 
     @Column(name = "last_name")
-    private String lastname;
+    private String lastName;
     @Column(name = "email_id")
-    private String emailid;
+    private String emailId;
 
     public Employee() {
 
     }
 
-    public Employee(String firstname, String lastname, String emailid) {
+    public Employee(String firstName, String lastName, String emailId) {
         super();
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.emailid = emailid;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.emailId = emailId;
     }
 
     public long getId() {
@@ -42,29 +44,28 @@ public class Employee {
         this.id = id;
     }
 
-    public String getFirstname() {
-        return this.firstname;
+    public String getFirstName() {
+        return this.firstName;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getLastname() {
-        return this.lastname;
+    public String getLastName() {
+        return this.lastName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public String getEmailid() {
-        return this.emailid;
+    public String getEmailId() {
+        return this.emailId;
     }
 
-    public void setEmailid(String emailid) {
-        this.emailid = emailid;
-
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
     }
 
 }
