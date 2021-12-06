@@ -27,9 +27,12 @@ class ListemployeeComponent extends Component {
 
                         <thead>
                             <tr>
+
+                                <th> Employee Number</th>
                                 <th> Employee First Name</th>
                                 <th> Employee last Name</th>
                                 <th> Employee email Id</th>
+                                <th> Employee Tel</th>
                                 <th> Actions</th>
                             </tr>
                         </thead>
@@ -41,9 +44,12 @@ class ListemployeeComponent extends Component {
                                 this.state.employees.map(
                                     employee =>
                                         <tr key={employee.id}>
+
+                                            <td> {employee.Number}</td>
                                             <td> {employee.firstName}</td>
                                             <td> {employee.lastName}</td>
                                             <td> {employee.emailId}</td>
+                                            <td> {employee.telNumber}</td>
 
 
 
