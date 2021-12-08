@@ -13,6 +13,10 @@
   }
 }
 
+body {
+  font-family: 'nanumsquare';
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,6 +26,26 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.black-nav {
+  background: black;
+  width: 100%;
+  display: flex;
+  color: white;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  box-sizing: border-box;
+
+
+}
+
+.list {
+  margin-top: 30;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .App-link {
